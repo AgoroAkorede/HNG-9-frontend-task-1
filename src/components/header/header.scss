@@ -41,15 +41,16 @@
     left: 75%;
     top: 5px;
     border-radius: 20px;
-    // display: none;
+    opacity: 0;
   }
 }
 
 @media (max-width: 500px) {
- .menu_button {
-  display: flex;
- }
- .share_button {
-  // display: none;
- }
+  .share_button {
+    display: none;
+  }
+  .menu_button {
+    opacity: 1;
+  }
 }
+

@@ -10,7 +10,7 @@ const Header = () => {
         <img alt="profile_img" src={profileImg} className="header__img" />
       </div>
       <h1 className="header__name">Agoro Akorede</h1>
-      <div className="share_button">
+      <div className="share_button" data-tip="Share Link">
         <img src={ShareButton} alt="share button" />
       </div>
       <div className="menu_button">
