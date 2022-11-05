@@ -10,7 +10,6 @@ const Form = ({handleSubmitForm}) => {
         name="contact"
         method="post"
         action="https://getform.io/f/41eb00d4-d753-403f-84fb-4a9ae17737e9"
-        onSubmit={handleSubmitForm}
       >
         <label className="check">
           <input type="checkbox" />
