@@ -1,5 +1,7 @@
 import LinkCard from "../link-card/link-card";
 import "./content.scss";
+import {Link} from "react-router-dom"
+
 const Content = () => {
   const ListofLinks = [
     {
@@ -24,6 +26,10 @@ const Content = () => {
       name: "Design Books",
       link: "https://books.zuri.team/design-rules",
     },
+    // {
+    //   id: "btn_contact",
+    //   name: "Contact",
+    // },
   ];
 
   return (
@@ -31,6 +37,9 @@ const Content = () => {
       {ListofLinks.map((item) => (
         <LinkCard linkName={item.name} url={item.link} id={item.id} />
       ))}
+      <Link to="/contact">
+        <LinkCard linkName="Contact" />
+      </Link>
     </div>
   );
 };

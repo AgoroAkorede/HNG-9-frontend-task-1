@@ -1,0 +1,29 @@
+
+.contact{
+  padding: 4px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem 1rem 1fr;
+  row-gap: .25rem;
+  &__header{
+    text-align: left;
+    & + p{
+      color: darken(#eaecf0,60%);
+    }
+  }
+
+  .check{
+    display: block;
+    & input{
+      width: .8rem;
+      height: .8rem;
+      border-radius: 10rem;
+      color: darken(#eaecf0,60%);
+    }
+    & span{
+      margin-left: .25rem;
+      color: darken(#eaecf0,60%);
+    }
+  }
+}

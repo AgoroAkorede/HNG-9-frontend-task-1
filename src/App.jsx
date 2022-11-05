@@ -1,20 +1,22 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
-import Header from './components/header/header';
-import Content from './components/content/content';
+import Home from "./components/home/home";
+
+import Contact from "./components/contact/contact";
 import Footer from './components/footer/footer';
-import Socials from './components/socials/socials';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Content/>
-      <Socials />
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
