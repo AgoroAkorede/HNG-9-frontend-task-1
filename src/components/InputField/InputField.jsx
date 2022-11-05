@@ -1,5 +1,4 @@
 import React from "react";
-import "./Inputfield.scss";
 
 function InputField(props) {
   return (
