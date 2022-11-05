@@ -1,0 +1,149 @@
+.contact {
+  padding: 6rem 8rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem 1rem 1fr;
+  row-gap: 0.25rem;
+  &__header {
+    text-align: left;
+    // padding: 1rem;
+    & + p {
+      color: darken(#eaecf0, 60%);
+    }
+  }
+
+  .check {
+    display: block;
+    & input {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 10rem;
+      color: darken(#eaecf0, 60%);
+    }
+    & span {
+      margin-left: 0.25rem;
+      color: darken(#eaecf0, 60%);
+    }
+  }
+}
+.container {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #101828;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+  margin-bottom: 48px;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background: #1570ef;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+
+  /* border: 1px solid red; */
+}
+
+.checkbox-container label {
+  color: #475467;
+}
+
+.name-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 2rem;
+}
+
+.nameField {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.div {
+  margin-bottom: 24px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.input {
+  outline: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  margin-top: 6px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.div textarea {
+  resize: none;
+  height: 8.25rem;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding: 1rem;
+  }
+  .subtext {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .name-container {
+    flex-direction: column;
+    padding-top: 4rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}

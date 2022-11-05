@@ -1,19 +1,22 @@
-.form{
-  &__button{
+.form {
+  &__button {
     background-color: blue;
     width: 100%;
     height: 3rem;
     color: #fff;
     font-size: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     cursor: pointer;
-
 
     outline: none;
     border: none;
-    &:focus{
+    &:focus {
       border: none;
       outline: none;
     }
   }
+}
+input[type="checkbox"] {
+  margin-right: 8px;
+  border: gray;
 }

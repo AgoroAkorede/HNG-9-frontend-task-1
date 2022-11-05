@@ -9,12 +9,12 @@ const Form = ({handleSubmitForm}) => {
         className="form"
         name="contact"
         method="post"
-        action="https://formspree.io/f/mpzndljb"
+        action="https://getform.io/f/41eb00d4-d753-403f-84fb-4a9ae17737e9"
         onSubmit={handleSubmitForm}
       >
         <label className="check">
           <input type="checkbox" />
-          <span>You agree to sending your data to Agoro Akorede who may contact you?</span>
+          <span className="check__info">You agree to sending your data to Akorede who may contact you?</span>
         </label>
 
         <button className="form__button">Send message</button>
